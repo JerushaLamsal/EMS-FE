@@ -15,9 +15,9 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center space-x-2 text-2xl font-bold transition" style={{ color: '#1f2937' }}>
-            <span>🇳🇵</span>
+            
             <span className="bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 bg-clip-text text-transparent">
-              NepEvent
+              HamroEvents
             </span>
           </Link>
 

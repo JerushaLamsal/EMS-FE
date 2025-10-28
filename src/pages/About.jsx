@@ -9,7 +9,7 @@ const About = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-red-600/10 to-blue-600/10"></div>
         <div className="relative container mx-auto max-w-4xl text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-red-600 to-blue-600 bg-clip-text text-transparent">
-            About NepEvent
+            About HamroEvents
           </h1>
           <p className="text-xl text-gray-600 mb-4">
             Connecting Nepal Through Events
@@ -24,7 +24,7 @@ const About = () => {
           <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12 mb-12">
             <div className="space-y-8 text-lg text-gray-700 leading-relaxed">
               <p>
-                NepEvent is Nepal's premier digital hub for discovering and managing events across our beautiful nation. 
+                HamroEvents is Nepal's premier digital hub for discovering and managing events across our beautiful nation. 
                 From the vibrant music festivals echoing across Pokhara's lakeside to the innovative tech conferences 
                 in Kathmandu's bustling startup scene, we bring together communities through the power of shared experiences.
               </p>
@@ -37,7 +37,7 @@ const About = () => {
               </p>
               
               <p>
-                NepEvent is built with inclusivity at its heart. We're here to help students discover educational 
+                HamroEvents is built with inclusivity at its heart. We're here to help students discover educational 
                 seminars, startups find networking opportunities, families enjoy cultural festivals, and communities 
                 come together through meaningful experiences. From the mountains of Mustang to the plains of the Terai, 
                 we're connecting every corner of Nepal.
@@ -133,7 +133,7 @@ const About = () => {
                 From Pokhara to Kathmandu — every event brings people closer.
               </h2>
               <p className="text-lg opacity-90 mb-6">
-                Join thousands of Nepalis who trust NepEvent for their event needs
+                Join thousands of Nepalis who trust HamroEvents for their event needs
               </p>
               <div className="flex justify-center space-x-4">
                 <div className="text-center">

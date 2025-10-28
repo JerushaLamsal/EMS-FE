@@ -20,7 +20,7 @@ const Footer = () => {
               </div>
               <h3 className="text-3xl font-bold">
                 <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-orange-400 bg-clip-text text-transparent">
-                  NepEvent
+                  HamroEvents
                 </span>
               </h3>
             </div>
@@ -136,8 +136,8 @@ const Footer = () => {
                 </div>
                 <div className="text-slate-300">
                   <p className="font-medium">Email Us</p>
-                  <p className="text-sm">info@nepevent.com</p>
-                  <p className="text-sm">support@nepevent.com</p>
+                  <p className="text-sm">contactat.jerusha@gmail.com</p>
+                  <p className="text-sm">rakshyagr@gmail.com</p>
                 </div>
               </div>
               
@@ -147,8 +147,8 @@ const Footer = () => {
                 </div>
                 <div className="text-slate-300">
                   <p className="font-medium">Call Us</p>
-                  <p className="text-sm">+977-1-4567890</p>
-                  <p className="text-sm">+977-9851234567</p>
+                  <p className="text-sm">+977 9813774974</p>
+                  <p className="text-sm">+977 9825110782</p>
                 </div>
               </div>
               
@@ -158,8 +158,8 @@ const Footer = () => {
                 </div>
                 <div className="text-slate-300">
                   <p className="font-medium">Visit Us</p>
-                  <p className="text-sm">Thamel, Kathmandu</p>
-                  <p className="text-sm">Nepal 44600</p>
+                  <p className="text-sm">Newroad, Pokhara</p>
+                  <p className="text-sm">Nepal 33700</p>
                 </div>
               </div>
             </div>
@@ -171,7 +171,7 @@ const Footer = () => {
           <div className="text-center max-w-2xl mx-auto">
             <h4 className="text-2xl font-bold mb-4">
               <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-orange-400 bg-clip-text text-transparent">
-                Stay Updated with Nepal Events
+                Stay Updated with Hamro Events
               </span>
             </h4>
             <p className="text-slate-300 mb-6">Get notified about the latest cultural events, festivals, and celebrations happening across Nepal.</p>
@@ -192,13 +192,7 @@ const Footer = () => {
         <div className="mt-12 pt-8 border-t border-slate-700">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-slate-400 text-sm flex items-center space-x-2">
-              <span>© 2024 NepEvent. All rights reserved.</span>
-              <span className="hidden md:inline">•</span>
-              <span className="flex items-center space-x-1">
-                <span>Made with</span>
-                <span className="text-red-500 animate-pulse">❤️</span>
-                <span>in Nepal</span>
-              </span>
+              <span>© 2025 HamroEvents. All rights reserved.</span>
             </div>
             <div className="flex flex-wrap justify-center md:justify-end gap-6 text-slate-400 text-sm">
               <a href="#" className="hover:text-white hover:underline transition-colors">

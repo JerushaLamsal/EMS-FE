@@ -176,7 +176,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-lg text-gray-800">Email</h3>
-                      <p className="text-gray-600">support@nepevent.com</p>
+                      <p className="text-gray-600">hamroevents@gmail.com</p>
                       <p className="text-sm text-gray-500">We'll respond within 24 hours</p>
                     </div>
                   </div>
@@ -187,7 +187,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-lg text-gray-800">Website</h3>
-                      <p className="text-gray-600">www.nepevent.com</p>
+                      <p className="text-gray-600">www.hamroevents.com</p>
                       <p className="text-sm text-gray-500">Available 24/7</p>
                     </div>
                   </div>

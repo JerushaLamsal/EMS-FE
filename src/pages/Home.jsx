@@ -10,7 +10,7 @@ const Home = () => {
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-pink-500 via-purple-600 to-orange-500 text-white py-20">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl font-bold mb-6">🇳🇵 Namaste! Welcome to Nepal Events</h1>
+          <h1 className="text-5xl font-bold mb-6">Namaste! Welcome to HamroEvents</h1>
           <p className="text-xl mb-8 text-pink-100">
             Discover and celebrate Nepal's vibrant culture, festivals, and events
           </p>
@@ -35,7 +35,7 @@ const Home = () => {
       <section className="py-16 bg-slate-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-slate-800 mb-12">
-            Why Choose Nepal Events?
+            Why Choose HamroEvents?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
