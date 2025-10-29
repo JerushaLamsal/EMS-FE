@@ -56,6 +56,7 @@ const FilterPanel = ({ filters, onFilterChange }) => {
           <div>
             <input
               type="number"
+              min="0"
               placeholder="Min"
               value={filters.minPrice || ''}
               onChange={(e) => handleFilterChange('minPrice', e.target.value)}
@@ -65,6 +66,7 @@ const FilterPanel = ({ filters, onFilterChange }) => {
           <div>
             <input
               type="number"
+              min="0"
               placeholder="Max"
               value={filters.maxPrice || ''}
               onChange={(e) => handleFilterChange('maxPrice', e.target.value)}

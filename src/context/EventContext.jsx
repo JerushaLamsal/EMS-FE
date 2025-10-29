@@ -86,6 +86,43 @@ export const EventProvider = ({ children }) => {
     return { success: true, attendee: newAttendee };
   };
 
+  // Purchase multiple tickets (handles quantity)
+  const purchaseTickets = (eventId, userId, userName, userEmail, ticketType, ticketPrice, quantity = 1) => {
+    const event = events.find(e => e.id === eventId);
+    if (!event) return { success: false, error: 'Event not found' };
+
+    // Check capacity
+    if (event.registeredCount + quantity > event.capacity) {
+      return { success: false, error: 'Not enough tickets available' };
+    }
+
+    const newAttendees = [];
+    for (let i = 0; i < quantity; i++) {
+      const newAttendee = {
+        id: attendees.length + newAttendees.length + 1,
+        userId,
+        name: userName,
+        email: userEmail,
+        eventId,
+        eventTitle: event.title,
+        ticketType,
+        ticketPrice,
+        registeredDate: new Date().toISOString().split('T')[0],
+        status: 'confirmed'
+      };
+      newAttendees.push(newAttendee);
+    }
+
+    setAttendees([...attendees, ...newAttendees]);
+    setEvents(events.map(e => 
+      e.id === eventId 
+        ? { ...e, registeredCount: e.registeredCount + quantity }
+        : e
+    ));
+
+    return { success: true, attendees: newAttendees };
+  };
+
   const unregisterFromEvent = (eventId, userId) => {
     setAttendees(attendees.filter(
       a => !(a.eventId === eventId && a.userId === userId)
@@ -121,7 +158,8 @@ export const EventProvider = ({ children }) => {
     createEvent,
     updateEvent,
     deleteEvent,
-    registerForEvent,
+  registerForEvent,
+  purchaseTickets,
     unregisterFromEvent,
     getAttendeesByEvent,
     getAttendeesByUser,

@@ -9,8 +9,45 @@ export const mockEvents = [
     organizer: 'Rajesh Shrestha',
     organizerId: 2,
     category: 'Cultural',
-    price: 500,
-    capacity: 1000,
+    tickets: [
+      {
+        type: 'Normal',
+        price: 500,
+        capacity: 700,
+        registeredCount: 356,
+        benefits: ['General admission', 'Access to food stalls', 'Participation in games'],
+        gradient: 'from-blue-500 to-blue-700'
+      },
+      {
+        type: 'VIP',
+        price: 2000,
+        capacity: 200,
+        registeredCount: 80,
+        benefits: [
+          'Premium seating area',
+          'Welcome drink',
+          'Food voucher worth NPR 500',
+          'Event merchandise',
+          'Priority parking'
+        ],
+        gradient: 'from-purple-500 to-pink-600'
+      },
+      {
+        type: 'VVIP',
+        price: 5000,
+        capacity: 100,
+        registeredCount: 20,
+        benefits: [
+          'Exclusive lounge access',
+          'Meet & greet with performers',
+          'Gourmet dining experience',
+          'Premium gift hamper',
+          'Dedicated host service',
+          'Valet parking'
+        ],
+        gradient: 'from-amber-500 to-red-600'
+      }
+    ],
     registeredCount: 456,
     image: 'https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800',
     status: 'upcoming'

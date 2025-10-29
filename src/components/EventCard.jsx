@@ -2,8 +2,7 @@ import { Link } from 'react-router-dom';
 
 const EventCard = ({ event }) => {
   return (
-    <Link to={`/events/${event.id}`}>
-      <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+    <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
         <div className="relative">
           <img
             src={event.image}
@@ -15,10 +14,10 @@ const EventCard = ({ event }) => {
               {event.category}
             </span>
           </div>
-          {event.price === 0 && (
+          {event.tickets && event.tickets.some(t => t.type === 'VIP') && (
             <div className="absolute top-3 left-3">
-              <span className="bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                FREE
+              <span className="bg-purple-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                VIP Available
               </span>
             </div>
           )}
@@ -48,20 +47,38 @@ const EventCard = ({ event }) => {
               </svg>
               <span className="line-clamp-1">{event.location}</span>
             </div>
-            
-            <div className="flex items-center justify-between pt-2 border-t border-slate-200">
-              <span className="text-lg font-bold text-blue-600">
-                NPR {event.price.toLocaleString()}
-              </span>
-              <span className="text-sm text-slate-500">
-                {event.registeredCount}/{event.capacity} registered
+
+            <div className="flex items-center text-slate-700 text-sm">
+              <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+              </svg>
+              <span>By {event.organizer}</span>
+            </div>
+          </div>
+
+          {/* Ticket Preview */}
+          <div className="border-t pt-4 mb-4">
+            <div className="flex justify-between items-center text-sm">
+              <span className="text-slate-600">Starting from:</span>
+              <span className="font-semibold text-blue-600">
+                {event.tickets ? 
+                  `NPR ${Math.min(...event.tickets.map(t => t.price)).toLocaleString()}` :
+                  'Free Entry'}
               </span>
             </div>
           </div>
+
+          {/* View Details Button */}
+          <Link 
+            to={`/events/${event.id}`}
+            className="block w-full bg-gradient-to-r from-purple-400 via-pink-400 to-orange-400 text-white text-center py-2 rounded-lg font-semibold hover:shadow-lg transition-all duration-300"
+          >
+            View Details
+          </Link>
         </div>
       </div>
-    </Link>
-  );
+  );   
 };
 
 export default EventCard;
+

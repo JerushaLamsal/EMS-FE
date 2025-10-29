@@ -14,6 +14,7 @@ import Signup from './pages/Signup';
 import CreateEvent from './pages/CreateEvent';
 import Dashboard from './pages/Dashboard';
 import Attendees from './pages/Attendees';
+import Checkout from './pages/Checkout';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/signup" element={<Signup />} />
+                <Route path="/checkout" element={<Checkout />} />
                 
                 <Route
                   path="/create"
